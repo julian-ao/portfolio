@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 const App = () => {
   return (
     <div className='font-inter overflow-hidden' >
-      <Background />
+      {/*<Background />*/}
       <React.StrictMode>
         <Navbar />
         <Intro />
