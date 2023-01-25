@@ -19,11 +19,9 @@ const About = () => {
       </div>
 
       {/* SKILLS */}
-      {/*
-        <SkillsTrain skills={frontendSkills} direction='left' speed={frontendSkills.length / 20} title='frontend' />
-        <SkillsTrain skills={backendSkills} direction='right' speed={backendSkills.length / 20} title='backend' />
-        <SkillsTrain skills={devToolsSkills} direction='left' speed={devToolsSkills.length / 20} title='dev tools' />
-      */}
+      <SkillsTrain skills={frontendSkills} direction='left' speed={frontendSkills.length / 20} title='frontend' />
+      <SkillsTrain skills={backendSkills} direction='right' speed={backendSkills.length / 20} title='backend' />
+      <SkillsTrain skills={devToolsSkills} direction='left' speed={devToolsSkills.length / 20} title='dev tools' />
       {/*
       <div>
         Backend
