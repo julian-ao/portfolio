@@ -169,10 +169,6 @@ export const backendSkills = [
     name: 'PHP',
     icon: 'None',
   },
-  {
-    name: 'JUnit',
-    icon: 'None',
-  },
 ]
 
 export const devToolsSkills = [
@@ -192,14 +188,14 @@ export const devToolsSkills = [
     name: 'GitHub',
     icon: svgIcons.github,
   },
-  {
+  /*{
     name: 'GitLab',
     icon: 'None',
-  },
-  {
+  },*/
+  /*{
     name: 'VS Code',
     icon: 'None',
-  },
+  },*/
   {
     name: 'Spotbugs',
     icon: 'None',
@@ -210,6 +206,10 @@ export const devToolsSkills = [
   },
   {
     name: 'Checkstyle',
+    icon: 'None',
+  },
+  {
+    name: 'JUnit',
     icon: 'None',
   },
 ]
@@ -273,7 +273,7 @@ export const projects = [
     description: 'Portfolio where i showcase my projects and skills. This is where I learned alot about React and Tailwind.',
     url: 'https://github.com/Jotto2/portfolio',
     github: 'https://github.com/Jotto2/portfolio',
-    imageUrl: 'src/assets/portfolio.jpg',
+    imageUrl: 'portfolio.jpg',
     tags: [
       {
         name: 'React',
@@ -294,7 +294,7 @@ export const projects = [
     description: 'A password manager with registration and login. The passwords are secured through encryption. This was a group project.',
     url: 'https://github.com/Jotto2/password-manager/',
     github: 'https://github.com/Jotto2/password-manager/',
-    imageUrl: 'src/assets/passwordManager.jpg',
+    imageUrl: 'passwordManager.jpg',
     tags: [
       {
         name: 'Java',
@@ -315,7 +315,7 @@ export const projects = [
     description: 'Simple weather website with search function. Search function. Using API to retrieve weather data',
     url: 'https://jotto2.github.io/weather-app/',
     github: 'https://github.com/Jotto2/weather-app',
-    imageUrl: 'src/assets/weatherApp.jpg',
+    imageUrl: 'weatherApp.jpg',
     tags: [
       {
         name: 'HTML',
@@ -336,7 +336,7 @@ export const projects = [
     description: 'A survival game built with p5.js. The game is playable in the browser.',
     url: 'https://jotto2.github.io/IT2/SPELPROSJEKT/index.html',
     github: 'https://github.com/Jotto2/IT2-game-project',
-    imageUrl: 'src/assets/spill.jpg',
+    imageUrl: 'spill.jpg',
     tags: [
       {
         name: 'JavaScript',

@@ -38,7 +38,7 @@ const Intro = () => {
           </div>
         </div>
         <div className='hidden lg:block select-none'>
-          <img src='src/assets/julian.jpg' className='rounded-full w-72 drop-shadow-5' />
+          <img src='julian.jpg' className='rounded-full w-72 drop-shadow-5' />
         </div>
       </div>
     </div>
