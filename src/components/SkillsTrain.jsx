@@ -35,7 +35,7 @@ const SkillsTrain = (props) => {
       text-[4rem] ss:text-[8.75rem]
       text-darkPurple/90 dark:text-white/90
       font-bold absolute -bottom-1 ss:-bottom-8 w-max
-      drop-shadow-4
+      dark:drop-shadow-4 drop-shadow-[2px_2px_2px_rgba(255,255,255,0.25)]
       select-none'>
       {props.title}
     </div>

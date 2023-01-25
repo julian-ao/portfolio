@@ -19,12 +19,11 @@ const About = () => {
       </div>
 
       {/* SKILLS */}
-      <SkillsTrain skills={frontendSkills} direction='left' speed={frontendSkills.length / 20} title='frontend' />
-      <SkillsTrain skills={backendSkills} direction='right' speed={backendSkills.length / 20} title='backend' />
-      <SkillsTrain skills={devToolsSkills} direction='left' speed={devToolsSkills.length / 20} title='dev tools' />
-      {console.log(frontendSkills.length / 20)}
-      {console.log(backendSkills.length / 20)}
-      {console.log(devToolsSkills.length / 20)}
+      {/*
+        <SkillsTrain skills={frontendSkills} direction='left' speed={frontendSkills.length / 20} title='frontend' />
+        <SkillsTrain skills={backendSkills} direction='right' speed={backendSkills.length / 20} title='backend' />
+        <SkillsTrain skills={devToolsSkills} direction='left' speed={devToolsSkills.length / 20} title='dev tools' />
+      */}
       {/*
       <div>
         Backend
