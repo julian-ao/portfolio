@@ -7,7 +7,7 @@ import { introText, introLinks } from '../constants/index.js'
 const Intro = () => {
   return (
     <div className='bg-white/75 dark:bg-darkPurple/50 md:w-23/24
-      flex justify-center mb-40 p-16 px-14 sm:px-22 md:px-32 lg:pr-16
+      flex justify-center mb-20 ss:mb-40 p-10 ss:p-16 px-14 sm:px-22 md:px-32 lg:pr-16
       md:rounded-r-full'>
       <div className='max-w-screen-xl flex content-center items-center'>
         <div className='lg:w-8/12 lg:mr-32 flex justify-center'>
@@ -16,7 +16,10 @@ const Intro = () => {
               <div className='flex justify-center'>
                 <div className='w-max'>
                   <div className='ss:text-xl text-left hidden sm:block'>{introText.hi}</div>
-                  <div className='text-[1.75rem] xs:text-4xl ss:text-5xl md:text-6xl drop-shadow-4 sm:text-center'>{introText.name}</div>
+                  <div className='text-[1.75rem] xs:text-4xl ss:text-5xl md:text-6xl
+                    drop-shadow-4 sm:text-center'>
+                    {introText.name}
+                    </div>
                 </div>
               </div>
               <div className='flex justify-center'>

@@ -26,7 +26,7 @@ const Projects = () => {
             <path d={svgIcons.arrow.svgPath} />
           </svg>
         </div>*/}
-        <div className='w-full p-10'>
+        <div className='w-full pt-5 pb-10 ss:p-10'>
           <div className='text-darkGrey dark:text-white text-4xl ss:text-6xl mb-10 font-semibold drop-shadow-4 '> projects </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-10'>
             {
