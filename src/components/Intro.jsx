@@ -28,6 +28,7 @@ const Intro = () => {
               </div>
               <div className='text-lg ss:text-xl text-left'>{introText.paragraph}</div>
             </div>
+            {/*
             <div className='mt-10 flex justify-center'>
               {
                 introLinks.map((e) => (
@@ -35,6 +36,7 @@ const Intro = () => {
                 ))
               }
             </div>
+            */}
           </div>
         </div>
         <div className='hidden lg:block select-none'>
