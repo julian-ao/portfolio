@@ -10,7 +10,7 @@ const SkillsTrain = (props) => {
   // TODO maybe randomize the speed as well?
 
   const both = [props.skills, props.skills, props.skills];
-  const speed = .5;
+  const speed = parseFloat(props.speed);
   const [components] = useState(() => both.map((e, i) => ({ id: i, element: e })));
   const divRef = useRef(null);
   let divWidth = -1;
