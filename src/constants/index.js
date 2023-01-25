@@ -287,6 +287,10 @@ export const projects = [
         name: 'p5.js',
         icon: svgIcons.p5,
       },
+      {
+        name: 'Figma',
+        icon: svgIcons.figma,
+      },
     ],
   },
   {
