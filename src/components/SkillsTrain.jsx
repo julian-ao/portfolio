@@ -32,9 +32,10 @@ const SkillsTrain = (props) => {
   return (
   <div className='relative mb-10 ss:mb-28 h-max'>
     <div className='
-      text-[4rem] ss:text-[8.75rem]
-      text-darkPurple/90 dark:text-white/90
-      font-bold absolute -bottom-1 ss:-bottom-8 w-max
+      text-[1.5rem] ss:text-[2rem]
+      text-white dark:text-white/90
+      ml-2
+      font-semibold
       dark:drop-shadow-4 drop-shadow-[2px_2px_2px_rgba(255,255,255,0.25)]
       select-none'>
       {props.title}
@@ -43,9 +44,7 @@ const SkillsTrain = (props) => {
         {components.map(e => (
           <div key={e.id} className='flex' >
             {e.element.map((i) => (
-              e.icon === 'None' ?
-              <Skill key={i.name + e.id} name={i.name} /> :
-              <Skill key={i.name + e.id} name={i.name} svgPath={i.icon.svgPath} svgViewBox={i.icon.svgViewBox} />
+              <Skill key={i.name + e.id} name={i.name} svg={i.icon}  />
             ))}
           </div>
           ))}
