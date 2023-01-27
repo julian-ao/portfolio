@@ -148,7 +148,7 @@ const JSBackground = ({ windowWidth, windowHeight }) => {
 
     animate()
 
-  }, [windowWidth, windowHeight])
+  }, [])
 
   const randomIntFromInterval = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min)
