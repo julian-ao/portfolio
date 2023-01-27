@@ -15,7 +15,7 @@ const JSBackground = ({ windowWidth, windowHeight }) => {
   const BACKGROUND_COLOR = "rgba(52, 24, 61, 1)" // rgba(45, 3, 59, 1)
 
   const AMOUNT_OF_BUBBLES = 20
-  const BLUR_PIXELS = 0
+  const BLUR_PIXELS = 100
 
   const MIN_SPEED = 1
   const MAX_SPEED = 2
@@ -155,7 +155,7 @@ const JSBackground = ({ windowWidth, windowHeight }) => {
   }
 
   return (
-    <div ref={canvasRef} className='fixed -z-10 blur-4xl scale-150'/>
+    <div ref={canvasRef} className='fixed -z-10 blur-4xl scale-150 dark:brightness-100 brightness-75'/>
   )
 }
 
