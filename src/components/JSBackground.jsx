@@ -1,12 +1,9 @@
 import React, { useEffect, useRef } from 'react'
 
-const CANVAS_MULTIPLIER = 2
-
 const JSBackground = ({ windowWidth, windowHeight }) => {
 
-  const CANVAS_WIDTH = windowWidth * CANVAS_MULTIPLIER // times CANVAS_MULTIPLIER to fix canvas cutting short on upscaling
-  const CANVAS_HEIGHT = windowHeight * CANVAS_MULTIPLIER
-
+  const CANVAS_WIDTH = windowWidth
+  const CANVAS_HEIGHT = windowHeight
   let canvasRef = useRef(null)
 
   let bubbles = []
