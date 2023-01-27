@@ -12,6 +12,9 @@ const Intro = () => {
       <div className='max-w-screen-xl flex content-center items-center'>
         <div className='lg:w-8/12 lg:mr-32 flex justify-center'>
           <div>
+            <div className='flex justify-center lg:hidden select-none mb-5 '>
+              <img src='julian.jpg' className='rounded-full drop-shadow-5 h-32 w-32 ss:h-56 ss:w-56' />
+            </div>
             <div className='text-darkGrey dark:text-white'>
               <div className='flex justify-center'>
                 <div className='w-max'>
