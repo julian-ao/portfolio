@@ -39,12 +39,12 @@ const Projects = () => {
           </svg>
         </div>*/}
         <a href='https://github.com/Jotto2' target='_blank'
-          className='bg-darkGreen hover:bg-lightGreen duration-200 rounded-full flex p-3 mb-10 width-max'>
+          className='bg-darkGreen hover:bg-lightGreen duration-200 rounded-full flex p-3 mb-10 w-max'>
           <svg className='fill-white h-6 mr-2'
             viewBox={svgIcons.github.svgViewBox}>
             <path d={svgIcons.github.svgPath} />
           </svg>
-          <div className='text-white'>
+          <div className='text-white w-max'>
             View more
           </div>
         </a>

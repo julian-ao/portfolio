@@ -29,7 +29,7 @@ const Project = (props) => {
 
   return (
     <div className='group bg-darkGrey h-72 rounded-2xl bg-cover drop-shadow-xl
-      hover:drop-shadow-none duration-200 cursor-pointer relative'
+      hover:drop-shadow-none duration-200 cursor-pointer overflow-hidden'
       style={{ backgroundImage: `url(${props.imageUrl})` }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave} >
