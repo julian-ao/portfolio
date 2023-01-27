@@ -4,10 +4,6 @@ import { svgIcons, projects } from '../constants/index.js'
 
 import Project from './Project'
 
-import Slider from 'react-slick'
-
-import ProjectCarousel from './ProjectCarousel.jsx';
-
 const Projects = () => {
 
   const settings = {

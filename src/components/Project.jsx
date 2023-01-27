@@ -35,12 +35,11 @@ const Project = (props) => {
       onMouseLeave={handleMouseLeave} >
 
       {/* GRADIENT */}
-      <a href={props.url} target='_blank' className='h-2/5 group-hover:h-full duration-200 w-full bottom-0 absolute ' // backdrop-blur-sm
-        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(30, 30, 30, 0.9))` }}
-        /*mask="url(#mask-linear)" filter="url(#filtre1)"*/ >
+      <a href={props.url} target='_blank' className='h-2/5 group-hover:h-full duration-200 w-full bottom-0  ' // backdrop-blur-sm
+        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(30, 30, 30, 0.9))` }} >
 
         {/* TEXT */}
-        <div id='ya' className={'absolute p-2'}
+        <div id='ya' className={' p-2'}
           style={{ bottom: `${isHovered ? 0 : -descriptionHeight - 3}px`, transition: 'all 0.2s ease-in-out', }}>
 
           <div className='text-white text-2xl '>
@@ -61,30 +60,12 @@ const Project = (props) => {
         </div>
       </a>
 
-      <a href={props.github} target='_blank' className='bg-darkGreen hover:bg-lightGreen duration-200 rounded-full p-2 absolute top-3 right-3'>
+      <a href={props.github} target='_blank' className='bg-darkGreen hover:bg-lightGreen duration-200 rounded-full p-2  top-3 right-3'>
         <svg className='fill-white h-6'
           viewBox={svgIcons.github.svgViewBox}>
           <path d={svgIcons.github.svgPath} />
         </svg>
       </a>
-
-      <svg height="0">
-        <defs><mask id="mask-linear">
-            <rect width="400" height="300" fill="url(#l1)"></rect>
-            <linearGradient id="l1" x1="0" y1="0" x2="0" y2="1">
-              <stop stopColor="white" offset="0%"/>
-              <stop stopColor="black" offset="30%"/>
-              <stop stopColor="white" offset="100%"/>
-            </linearGradient>
-          </mask>
-          <filter id="filtre1">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="5"/>
-          </filter>
-          <filter id="filtre2">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
-          </filter>
-        </defs>
-      </svg>
 
     </div>
   )

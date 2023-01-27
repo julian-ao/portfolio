@@ -15,8 +15,7 @@ const App = () => {
   const windowHeight = useWindowDimensions().height
 
   return (
-    <div className='font-inter overflow-hidden' >
-      {/*<Background />*/}
+    <div className='font-inter overflow-hidden w-full' >
       <JSBackground windowWidth={windowWidth} windowHeight={windowHeight} />
       <React.StrictMode>
         <Navbar />
