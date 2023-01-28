@@ -28,14 +28,14 @@ const Project = (props) => {
   };
 
   return (
-    <div className='group bg-darkGrey h-72 rounded-2xl bg-cover drop-shadow-xl
+    <div className='group bg-darkGrey h-52 xs:h-72 rounded-2xl bg-cover drop-shadow-xl
       hover:drop-shadow-none duration-200 cursor-pointer relative overflow-hidden'
       style={{ backgroundImage: `url(${props.imageUrl})` }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave} >
 
       {/* GRADIENT */}
-      <a href={props.url} target='_blank' className='h-2/5 group-hover:h-full duration-200 w-full bottom-0 absolute ' // backdrop-blur-sm
+      <a href={props.url} target='_blank' className='h-2/5 group-hover:h-full duration-200 w-full bottom-0 absolute '
         style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(30, 30, 30, 0.9))` }} >
 
         {/* TEXT */}
@@ -54,7 +54,7 @@ const Project = (props) => {
             }
           </div>
 
-          <div ref={divRef} className='text-white text-md '>
+          <div ref={divRef} className='text-white text-md hidden ss:block'>
             {props.description}
           </div>
         </div>
