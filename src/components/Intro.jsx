@@ -32,7 +32,7 @@ const Intro = () => {
                     {introText.title}
                 </div>
               </div>
-              <div className='text-lg ss:text-xl text-left'>{introText.paragraph}</div>
+              <div className='text-lg ss:text-[1.35rem] text-left leading-9'>{introText.paragraph}</div>
             </div>
             {/*
             <div className='mt-10 flex justify-center'>
