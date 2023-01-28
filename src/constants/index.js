@@ -326,7 +326,7 @@ export const projects = [
   {
     title: "Portfolio",
     description:
-      "Portfolio where i showcase my projects and skills. This is where I learned alot about React and Tailwind.",
+      "Portfolio where i showcase my projects and skills.",
     url: "https://www.julianao.dev/",
     github: "https://github.com/jotto2/portfolio/",
     imageUrl: "portfolio.jpg",
