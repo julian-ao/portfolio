@@ -29,13 +29,13 @@ const Project = (props) => {
 
   return (
     <div className='group bg-darkGrey h-52 xs:h-72 rounded-2xl bg-cover drop-shadow-xl
-      hover:drop-shadow-none duration-200 cursor-pointer relative overflow-hidden'
+      hover:drop-shadow-none duration-200 cursor-pointer relative overflow-hidden bg-top'
       style={{ backgroundImage: `url(${props.imageUrl})` }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave} >
 
       {/* GRADIENT */}
-      <a href={props.url} target='_blank' className='h-2/5 group-hover:h-full duration-200 w-full bottom-0 absolute '
+      <a href={props.url} target='_blank' className='h-3/5 group-hover:h-full duration-200 w-full bottom-0 absolute '
         style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(30, 30, 30, 0.9))` }} >
 
         {/* TEXT */}

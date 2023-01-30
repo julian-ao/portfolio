@@ -326,7 +326,7 @@ export const projects = [
   {
     title: "Portfolio",
     description:
-      "Portfolio where i showcase my projects and skills.",
+      "A personal portfolio where i showcase my projects and skills.",
     url: "https://www.julianao.dev/",
     github: "https://github.com/jotto2/portfolio/",
     imageUrl: "portfolio.jpg",
@@ -362,8 +362,8 @@ export const projects = [
         icon: svgIcons.java,
       },
       {
-        name: "JavaFX",
-        icon: svgIcons.java,
+        name: "Maven",
+        icon: svgIcons.maven,
       },
       {
         name: "Springboot",
@@ -372,6 +372,10 @@ export const projects = [
       {
         name: "Figma",
         icon: svgIcons.figma,
+      },
+      {
+        name: "JavaFX",
+        icon: svgIcons.java,
       },
     ],
   },
@@ -397,7 +401,7 @@ export const projects = [
       },
     ],
   },
-  {
+  /*{
     title: "Game project",
     description:
       "A survival game built with p5.js. The game is playable in the browser.",
@@ -412,6 +416,28 @@ export const projects = [
       {
         name: "p5.js",
         icon: svgIcons.p5,
+      },
+    ],
+  },*/
+  {
+    title: "Online Chrome Extension",
+    description:
+      "Extension to automatically add Online Events to Google Calendar.",
+    url: "https://github.com/appKom/calendar-extension",
+    github: "https://github.com/appKom/calendar-extension",
+    imageUrl: "appkomExtension.jpg",
+    tags: [
+      {
+        name: "JavaScript",
+        icon: svgIcons.javascript,
+      },
+      {
+        name: "HTML",
+        icon: svgIcons.html,
+      },
+      {
+        name: "Google ",
+        icon: svgIcons.html,
       },
     ],
   },
