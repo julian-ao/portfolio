@@ -5,10 +5,6 @@ import { useState, useEffect, useRef } from 'react'
 import Skill from './Skill'
 
 const SkillsTrain = (props) => {
-
-  // TODO randomize the order of the skills in each instance of the component
-  // TODO maybe randomize the speed as well?
-
   const both = [props.skills, props.skills, props.skills];
   const speed = parseFloat(props.speed);
   const [components] = useState(() => both.map((e, i) => ({ id: i, element: e })));
@@ -30,7 +26,7 @@ const SkillsTrain = (props) => {
   }, []);
 
   return (
-  <div className='relative mb-10 ss:mb-28 h-max'>
+  <div className='relative mb-5 ss:mb-10 h-max'>
     <div className='
       text-[1.5rem] ss:text-[2rem]
       text-white dark:text-white/90
