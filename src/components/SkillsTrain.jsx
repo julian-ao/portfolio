@@ -29,7 +29,7 @@ const SkillsTrain = (props) => {
   <div className='relative mb-5 ss:mb-10 h-max'>
     <div className='
       text-[1.5rem] ss:text-[2rem]
-      text-white dark:text-white/90
+      dark:text-washedYellow/90
       ml-2
       font-semibold
       dark:drop-shadow-4 drop-shadow-[2px_2px_2px_rgba(255,255,255,0.25)]

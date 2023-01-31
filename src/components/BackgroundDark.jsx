@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 
-const JSBackground = ({ windowWidth, windowHeight }) => {
+const BackgroundDark = ({ windowWidth, windowHeight }) => {
 
   const CANVAS_WIDTH = windowWidth
   const CANVAS_HEIGHT = windowHeight
@@ -10,19 +10,6 @@ const JSBackground = ({ windowWidth, windowHeight }) => {
 
   const COLORS = ["#383855", "#37172D"] //? Colors of the bubbles
   const BACKGROUND_COLOR = "#201525" //? Background color 
-
-  /*
-  Light yellow: #FFF9C4
-  Light blue: #81D4FA
-  Light green: #C5E1A5
-  Light pink: #F48FB1
-
-  Light blue (#87CEFA) and deep blue (#00008B)
-  Light gray (#DCDCDC) and deep gray (#2F4F4F)
-  Light peach (#FFE5B4) and deep orange (#FF8C00)
-  Light mint green (#98FB98) and deep green (#006400)
-  Light lavender (#E6E6FA) and deep purple (#9370DB)
-  */
 
   const AMOUNT_OF_BUBBLES = 13
   const BLUR_PIXELS = 100
@@ -165,8 +152,8 @@ const JSBackground = ({ windowWidth, windowHeight }) => {
   }
 
   return (
-    <div ref={canvasRef} className='fixed scale-150 -z-10 blur-4xl'/>
+    <div ref={canvasRef} className='fixed scale-150 -z-10 blur-4xl hidden dark:inline'/>
   )
 }
 
-export default JSBackground
+export default BackgroundDark

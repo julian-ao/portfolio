@@ -60,8 +60,8 @@ const Project = (props) => {
         </div>
       </a>
 
-      <a href={props.github} target='_blank' className='bg-darkGreen hover:bg-lightGreen duration-200 rounded-full p-2 absolute top-3 right-3'>
-        <svg className='fill-white h-6'
+      <a href={props.github} target='_blank' className='dark:bg-washedYellow hover:fill-darkBlue bg-darkBlue dark:hover:bg-white hover:bg-darkGrey border-[1.5px] border-darkBlue dark:border-washedYellow dark:hover:border-white hover:border-darkGrey duration-200 rounded-full p-2 absolute top-3 right-3'>
+        <svg className='dark:fill-darkGrey fill-white duration-200 h-6'
           viewBox={svgIcons.github.svgViewBox}>
           <path d={svgIcons.github.svgPath} />
         </svg>

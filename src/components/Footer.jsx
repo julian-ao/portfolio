@@ -7,7 +7,7 @@ import { scrollToId } from '../functions/scrollToId.js'
 
 const Footer = () => {
   return (
-    <div className='w-full h-20 ss:h-28 bg-white/75 dark:bg-darkPurple/50 flex justify-center items-center select-none'>
+    <div className='w-full h-20 ss:h-28 dark:bg-white/25 bg-lightPurple/25 flex justify-center items-center select-none'>
 
       {/* NAVIGATION BUTTONS */}
       <div className='w-max h-min flex absolute left-0 xs:left-3 sm:left-5'>
@@ -19,7 +19,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <svg onClick={scrollToId.bind(this, 'navbar')} className='hover:fill-white dark:hover:fill-darkGrey fill-darkGrey dark:fill-white duration-200 h-6 w-auto ss:w-7 mr-0 ss:mr-3 -rotate-90 cursor-pointer' viewBox={svgIcons.arrow.svgViewBox} >
+        <svg onClick={scrollToId.bind(this, 'navbar')} className='dark:hover:fill-white hover:fill-white dark:fill-washedYellow duration-200 h-6 w-auto ss:w-7 mr-0 ss:mr-3 -rotate-90 cursor-pointer' viewBox={svgIcons.arrow.svgViewBox} >
           <path d={svgIcons.arrow.svgPath} />
         </svg>
       </div>

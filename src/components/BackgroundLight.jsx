@@ -1,50 +1,46 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
-import Sketch from "react-p5";
-import useWindowDimensions from '../hooks/useWindowDimensions';
+const BackgroundLight = ({ windowWidth, windowHeight }) => {
 
-const Background = () => {
-
-  const CANVAS_MULTIPLIER = 2
-
-  const CANVAS_WIDTH = useWindowDimensions().width * CANVAS_MULTIPLIER // times CANVAS_MULTIPLIER to fix canvas cutting short on upscaling
-  const CANVAS_HEIGHT = useWindowDimensions().height * CANVAS_MULTIPLIER
+  const CANVAS_WIDTH = windowWidth
+  const CANVAS_HEIGHT = windowHeight
+  let canvasRef = useRef(null)
 
   let bubbles = []
 
-  const COLORS = ["#E5B8F4", "#d2a1e3"] // "#810CA8""#C147E9", 
-  const BACKGROUND_COLOR = "rgba(52, 24, 61, 1)" // rgba(45, 3, 59, 1)
+  const COLORS = ["#E0F8F4", "#F5DAEA"] //? Colors of the bubbles
+  const BACKGROUND_COLOR = "#E9E9E9" //? Background color  #E9E9E9
 
-  const AMOUNT_OF_BUBBLES = 30
-  const BLUR_PIXELS = 0
+  const AMOUNT_OF_BUBBLES = 13
+  const BLUR_PIXELS = 100
 
   const MIN_SPEED = 1
-  const MAX_SPEED = 3
+  const MAX_SPEED = 2
   const MAX_SIDE_SPEED = 1
 
-  const MIN_RADIUS = 10
-  const MAX_RADIUS = 200
+  const MIN_RADIUS = CANVAS_WIDTH / 50
+  const MAX_RADIUS = CANVAS_WIDTH / 10
 
-  const setup = (p5, canvasParentRef) => {
-		// use parent to render the canvas in this ref
-		// (without that p5 will render the canvas outside of your component)
+  useEffect(() => {
+    // create canvas
+    const canvas = document.createElement("canvas");
+    canvas.width = CANVAS_WIDTH;
+    canvas.height = CANVAS_HEIGHT;
+    canvasRef.current.appendChild(canvas);
 
-		p5.createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT).parent(canvasParentRef);
-	};
+    const ctx = canvas.getContext("2d");
 
-	const draw = (p5) => {
-		// NOTE: Do not use setState in the draw function or in functions that are executed
-		// in the draw function...
-		// please use normal variables or class properties for these purposes
-
+    // create bubbles
     class Bubble {
       show() {
-        p5.noStroke()
-        p5.fill(COLORS[this.colorIndex])
-        p5.ellipse(this.x, this.y, this.radius * 2)
+        ctx.fillStyle = COLORS[this.colorIndex]
+        ctx.beginPath()
+        ctx.ellipse(this.x, this.y, this.radius * 2, this.radius * 2, 0, 0, Math.PI * 2);
+        ctx.fill()
       }
 
       startSpawn() {
+        this.spawnPoint = Math.ceil(randomIntFromInterval(0, 4))
         this.colorIndex = randomIntFromInterval(0, COLORS.length - 1)
 
         this.radius = randomIntFromInterval(MIN_RADIUS, MAX_RADIUS)
@@ -127,30 +123,37 @@ const Background = () => {
       }
     }
 
-    const randomIntFromInterval = (min, max) => {
-      return Math.floor(Math.random() * (max - min + 1) + min)
+    // animation loop
+    function animate() {
+      requestAnimationFrame(animate)
+      ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
+
+      // drawing code
+      ctx.fillStyle = BACKGROUND_COLOR
+      ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
+
+      while (bubbles.length < AMOUNT_OF_BUBBLES) {
+        bubbles.push(new Bubble())
+        bubbles[bubbles.length - 1].startSpawn()
+      }
+
+      for (let i = 0; i <= bubbles.length - 1; i++) {
+        bubbles[i].move()
+        bubbles[i].show()
+      }
     }
 
-    p5.frameRate(60)
-    //p5.drawingContext.filter = 'blur(' + BLUR_PIXELS + 'px)'
+    animate()
 
-    p5.background(BACKGROUND_COLOR)
+  }, [])
 
-    while (bubbles.length < AMOUNT_OF_BUBBLES) {
-      bubbles.push(new Bubble())
-      bubbles[bubbles.length - 1].startSpawn()
-    }
-
-    for (let i = 0; i <= bubbles.length - 1; i++) {
-      bubbles[i].move()
-      bubbles[i].show()
-    }
-
-	};
+  const randomIntFromInterval = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
 
   return (
-    <Sketch setup={setup} draw={draw} className='fixed -z-10 blur-4xl scale-150' />
+    <div ref={canvasRef} className='fixed scale-150 -z-10 blur-4xl inline dark:hidden'/>
   )
 }
 
-export default Background
+export default BackgroundLight

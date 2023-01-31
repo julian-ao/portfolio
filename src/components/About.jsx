@@ -9,7 +9,7 @@ const About = () => {
     <div className='flex flex-col mb-20' >
       <div className='flex flex-col items-center ss:mb-10' >
         {/* ABOUT TEXT */}
-        <div className='text-washedYellow w-4/5 lg:w-3/5 mb-12 ss:mb-20' id='about' >
+        <div className='dark:text-washedYellow text-darkBlue w-4/5 lg:w-3/5 mb-12 ss:mb-20' id='about' >
           <h1 className='text-4xl ss:text-6xl font-semibold drop-shadow-4 ' > { aboutText.title } </h1>
           <br></br>
           <p className='text-lg ss:text-[1.35rem] leading-9' > { aboutText.paragraph } </p>
