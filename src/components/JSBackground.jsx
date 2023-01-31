@@ -8,10 +8,23 @@ const JSBackground = ({ windowWidth, windowHeight }) => {
 
   let bubbles = []
 
-  const COLORS = ["#E5B8F4", "#d2a1e3"] // "#810CA8""#C147E9", 
-  const BACKGROUND_COLOR = "rgba(52, 24, 61, 1)" // rgba(45, 3, 59, 1)
+  const COLORS = ["#383855", "#37172D"] //? Colors of the bubbles
+  const BACKGROUND_COLOR = "#201525" //? Background color 
 
-  const AMOUNT_OF_BUBBLES = 20
+  /*
+  Light yellow: #FFF9C4
+  Light blue: #81D4FA
+  Light green: #C5E1A5
+  Light pink: #F48FB1
+
+  Light blue (#87CEFA) and deep blue (#00008B)
+  Light gray (#DCDCDC) and deep gray (#2F4F4F)
+  Light peach (#FFE5B4) and deep orange (#FF8C00)
+  Light mint green (#98FB98) and deep green (#006400)
+  Light lavender (#E6E6FA) and deep purple (#9370DB)
+  */
+
+  const AMOUNT_OF_BUBBLES = 13
   const BLUR_PIXELS = 100
 
   const MIN_SPEED = 1
@@ -19,7 +32,7 @@ const JSBackground = ({ windowWidth, windowHeight }) => {
   const MAX_SIDE_SPEED = 1
 
   const MIN_RADIUS = CANVAS_WIDTH / 50
-  const MAX_RADIUS = CANVAS_WIDTH / 20
+  const MAX_RADIUS = CANVAS_WIDTH / 10
 
   useEffect(() => {
     // create canvas
@@ -152,7 +165,7 @@ const JSBackground = ({ windowWidth, windowHeight }) => {
   }
 
   return (
-    <div ref={canvasRef} className='fixed -z-10 blur-4xl scale-150 dark:brightness-100 brightness-75'/>
+    <div ref={canvasRef} className='fixed scale-150 -z-10 blur-4xl'/>
   )
 }
 

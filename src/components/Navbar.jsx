@@ -9,7 +9,7 @@ import ThemeIcon from './ThemeIcon';
 const Navbar = () => {
   return (
     <div className='flex justify-center text-lg mb-36 ss:mb-44 xs:mb-56 select-none' id='navbar'>
-      <div className='bg-white/75 dark:bg-darkPurple/50 w-full fixed backdrop-blur ss:w-11/12 flex justify-between flex-row h-14 xs:h-16 mt-0 ss:mt-4 items-center rounded-none ss:rounded-3xl z-10'>
+      <div className='bg-white/25 dark:bg-darkPurple/50 w-full fixed backdrop-blur ss:w-11/12 flex justify-between flex-row h-14 xs:h-16 mt-0 ss:mt-4 items-center rounded-none ss:rounded-3xl z-10'>
 
         {/* NAVIGATION BUTTONS */}
         <div className='w-max h-min flex'>
