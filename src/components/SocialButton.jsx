@@ -4,10 +4,11 @@ const SocialButton = (props) => {
   let svg;
   if (props.svgPath){
     svg = <svg className='
-      fill-white dark:fill-darkPurple
-      group-hover:fill-darkPurple dark:group-hover:fill-white duration-200
+      dark:fill-washedYellow fill-darkBlue
+      dark:group-hover:fill-darkGrey group-hover:fill-white
+      duration-200
       h-6 w-7 mr-0 md:mr-3'
-      viewBox={props.svgViewBox} > // '0 0 500 500'
+      viewBox={props.svgViewBox} >
       <path d={props.svgPath} />
     </svg>
   }
@@ -22,12 +23,14 @@ const SocialButton = (props) => {
   return (
   <a href={props.url} target='_blank' className='
     group
-    bg-darkPurple dark:bg-white
-    hover:bg-white dark:hover:bg-darkPurple
-    text-white dark:text-darkPurple
-    hover:text-darkPurple dark:hover:text-white
+    border-[1.5px]
+    dark:border-washedYellow border-darkBlue
+    dark:hover:bg-white hover:bg-darkBlue
+    dark:hover:text-darkGrey hover:text-white
+    dark:hover:border-white hover:border-darkBlue
+    dark:text-washedYellow
     duration-200
-    drop-shadow-4 rounded-full
+    rounded-full
     w-max h-9 mr-3 xs:mr-7 px-3 md:px-5
     flex items-center
     select-none'>

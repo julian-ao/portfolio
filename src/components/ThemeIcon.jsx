@@ -9,11 +9,11 @@ const ThemeIcon = () => {
   return (
     <span onClick={handleMode}>
       {darkTheme ? (
-        <svg className='h-6 fill-darkGrey dark:fill-white hover:fill-white dark:hover:fill-darkGrey duration-200 cursor-pointer' viewBox={svgIcons.moon.svgViewBox} >
+        <svg className='h-6 dark:fill-washedYellow fill-darkBlue dark:hover:fill-white duration-200 cursor-pointer' viewBox={svgIcons.moon.svgViewBox} >
           <path d={svgIcons.sun.svgPath} ></path>
         </svg>
       ) : (
-        <svg className='h-6 fill-darkGrey hover:fill-white duration-200 cursor-pointer' viewBox={svgIcons.sun.svgViewBox} >
+        <svg className='h-6 hover:fill-white fill-darkBlue dark:hover:fill-white duration-200 cursor-pointer' viewBox={svgIcons.sun.svgViewBox} >
           <path d={svgIcons.moon.svgPath} ></path>
         </svg>
       )}

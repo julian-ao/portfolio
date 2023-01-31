@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 
-const JSBackground = ({ windowWidth, windowHeight }) => {
+const BackgroundLight = ({ windowWidth, windowHeight }) => {
 
   const CANVAS_WIDTH = windowWidth
   const CANVAS_HEIGHT = windowHeight
@@ -8,10 +8,10 @@ const JSBackground = ({ windowWidth, windowHeight }) => {
 
   let bubbles = []
 
-  const COLORS = ["#E5B8F4", "#d2a1e3"] // "#810CA8""#C147E9", 
-  const BACKGROUND_COLOR = "rgba(52, 24, 61, 1)" // rgba(45, 3, 59, 1)
+  const COLORS = ["#E0F8F4", "#F5DAEA"] //? Colors of the bubbles
+  const BACKGROUND_COLOR = "#E9E9E9" //? Background color  #E9E9E9
 
-  const AMOUNT_OF_BUBBLES = 20
+  const AMOUNT_OF_BUBBLES = 13
   const BLUR_PIXELS = 100
 
   const MIN_SPEED = 1
@@ -19,7 +19,7 @@ const JSBackground = ({ windowWidth, windowHeight }) => {
   const MAX_SIDE_SPEED = 1
 
   const MIN_RADIUS = CANVAS_WIDTH / 50
-  const MAX_RADIUS = CANVAS_WIDTH / 20
+  const MAX_RADIUS = CANVAS_WIDTH / 10
 
   useEffect(() => {
     // create canvas
@@ -152,8 +152,8 @@ const JSBackground = ({ windowWidth, windowHeight }) => {
   }
 
   return (
-    <div ref={canvasRef} className='fixed -z-10 blur-4xl scale-150 dark:brightness-100 brightness-75'/>
+    <div ref={canvasRef} className='fixed scale-150 -z-10 blur-4xl inline dark:hidden'/>
   )
 }
 
-export default JSBackground
+export default BackgroundLight

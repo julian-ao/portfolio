@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Background from './components/Background'
-import JSBackground from './components/JSBackground'
+import BackgroundDark from './components/BackgroundDark'
+import BackgroundLight from './components/BackgroundLight'
 import Navbar from './components/Navbar'
 import Intro from './components/Intro'
 import Projects from './components/Projects'
@@ -16,7 +16,8 @@ const App = () => {
 
   return (
     <div className='font-inter overflow-hidden w-full' >
-      <JSBackground windowWidth={windowWidth} windowHeight={windowHeight} />
+      <BackgroundDark windowWidth={windowWidth} windowHeight={windowHeight} />
+      <BackgroundLight windowWidth={windowWidth} windowHeight={windowHeight} />
       <React.StrictMode>
         <Navbar />
         <Intro />

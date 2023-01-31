@@ -17,10 +17,12 @@ module.exports = {
     colors: {
       darkPurple: "#2D033B",
       lightPurple: "#96819D",
-      white: "#FFFFFF",
+      white: "#EEEEEE",
+      washedYellow: "#FFE5B4",
       darkGrey: "#3A3A3A",
       lightGreen: "#16a34a",
       darkGreen: "#14532d",
+      darkBlue: "#101C3B",
     },
     fontFamily: {
       inter: ["Inter", "sans-serif"],
