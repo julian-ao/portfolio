@@ -15,7 +15,7 @@ const App = () => {
   const windowHeight = useWindowDimensions().height
 
   return (
-    <div className='font-inter overflow-hidden w-full' >
+    <div className='font-inter overflow-hidden w-full hl-transparent' >
       <BackgroundDark windowWidth={windowWidth} windowHeight={windowHeight} />
       <BackgroundLight windowWidth={windowWidth} windowHeight={windowHeight} />
       <React.StrictMode>
