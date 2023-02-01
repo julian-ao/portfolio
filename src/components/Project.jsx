@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from 'react'
 import { svgIcons } from '../constants/index.js'
 
 import ProjectTechnology from './ProjectTechnology'
+import ProjectGithubLink from './ProjectGithubLink'
 
 const Project = (props) => {
 
@@ -28,15 +29,14 @@ const Project = (props) => {
   };
 
   return (
-    <div className='group bg-darkGrey h-52 xs:h-72 rounded-2xl bg-cover drop-shadow-xl
-      hover:drop-shadow-none duration-200 cursor-pointer relative overflow-hidden bg-top'
-      style={{ backgroundImage: `url(${props.imageUrl})` }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave} >
+    <div className='group bg-darkGrey h-52 xs:h-72 rounded-2xl bg-cover drop-shadow-xl duration-200 cursor-pointer relative overflow-hidden bg-top'
+      style={{ backgroundImage: `url(${props.imageUrl})` }} >
 
       {/* GRADIENT */}
-      <a href={props.url} target='_blank' className='h-3/5 group-hover:h-full duration-200 w-full bottom-0 absolute '
-        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(30, 30, 30, 0.9))` }} >
+      <a href={props.url} target='_blank' className='group h-3/5 ss:group-hover:h-full duration-200 w-full bottom-0 absolute '
+        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(30, 30, 30, 0.9))` }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave} >
 
         {/* TEXT */}
         <div id='ya' className={'absolute p-2'}
@@ -60,13 +60,7 @@ const Project = (props) => {
         </div>
       </a>
 
-      <a href={props.github} target='_blank' className='dark:bg-washedYellow hover:fill-darkBlue bg-darkBlue dark:hover:bg-white hover:bg-darkGrey border-[1.5px] border-darkBlue dark:border-washedYellow dark:hover:border-white hover:border-darkGrey duration-200 rounded-full p-2 absolute top-3 right-3'>
-        <svg className='dark:fill-darkGrey fill-white duration-200 h-6'
-          viewBox={svgIcons.github.svgViewBox}>
-          <path d={svgIcons.github.svgPath} />
-        </svg>
-      </a>
-
+      <ProjectGithubLink github={props.github} />
     </div>
   )
 }

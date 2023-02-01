@@ -5,7 +5,7 @@ const SocialButton = (props) => {
   if (props.svgPath){
     svg = <svg className='
       dark:fill-washedYellow fill-darkBlue
-      dark:group-hover:fill-darkGrey group-hover:fill-white
+      ss:dark:group-hover:fill-darkGrey ss:group-hover:fill-white
       duration-200
       h-6 w-7 mr-0 md:mr-3'
       viewBox={props.svgViewBox} >
@@ -25,9 +25,9 @@ const SocialButton = (props) => {
     group
     border-[1.5px]
     dark:border-washedYellow border-darkBlue
-    dark:hover:bg-white hover:bg-darkBlue
-    dark:hover:text-darkGrey hover:text-white
-    dark:hover:border-white hover:border-darkBlue
+    ss:dark:hover:bg-washedYellow ss:hover:bg-darkBlue
+    ss:dark:hover:text-darkGrey ss:hover:text-white
+    ss:dark:hover:border-washedYellow ss:hover:border-darkBlue
     dark:text-washedYellow
     duration-200
     rounded-full

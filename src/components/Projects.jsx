@@ -39,12 +39,12 @@ const Projects = () => {
           </svg>
         </div>*/}
         <a href='https://github.com/Jotto2' target='_blank'
-          className='group border-[1.5px] dark:border-washedYellow border-darkBlue dark:hover:bg-white hover:bg-darkBlue dark:hover:border-white duration-200 rounded-full flex align-center p-3 mb-10 w-[135px] h-[49px]'>
-          <svg className='dark:fill-washedYellow fill-darkBlue dark:group-hover:fill-darkGrey group-hover:fill-white h-6 mr-2'
+          className='group border-[1.5px] dark:border-washedYellow border-darkBlue ss:dark:hover:bg-washedYellow ss:hover:bg-darkBlue ss:dark:hover:border-washedYellow duration-200 rounded-full flex align-center p-3 mb-10 w-[135px] h-[49px]'>
+          <svg className='dark:fill-washedYellow fill-darkBlue ss:dark:group-hover:fill-darkGrey ss:group-hover:fill-white h-6 mr-2'
             viewBox={svgIcons.github.svgViewBox}>
             <path d={svgIcons.github.svgPath} />
           </svg>
-          <div className='dark:text-washedYellow text-darkBlue dark:group-hover:text-darkGrey group-hover:text-white w-max'>
+          <div className='dark:text-washedYellow text-darkBlue ss:dark:group-hover:text-darkGrey ss:group-hover:text-white w-max'>
             View more
           </div>
         </a>

@@ -19,7 +19,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <svg onClick={scrollToId.bind(this, 'navbar')} className='dark:hover:fill-white hover:fill-white dark:fill-washedYellow duration-200 h-6 w-auto ss:w-7 mr-0 ss:mr-3 -rotate-90 cursor-pointer' viewBox={svgIcons.arrow.svgViewBox} >
+        <svg onClick={scrollToId.bind(this, 'navbar')} className='ss:dark:hover:fill-white ss:hover:fill-white dark:fill-washedYellow duration-200 h-6 w-auto ss:w-7 mr-0 ss:mr-3 -rotate-90 cursor-pointer' viewBox={svgIcons.arrow.svgViewBox} >
           <path d={svgIcons.arrow.svgPath} />
         </svg>
       </div>
