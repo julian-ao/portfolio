@@ -18,8 +18,8 @@ const BackgroundLight = ({ windowWidth, windowHeight }) => {
   const MAX_SPEED = 2
   const MAX_SIDE_SPEED = 1
 
-  const MIN_RADIUS = CANVAS_WIDTH / 50
-  const MAX_RADIUS = CANVAS_WIDTH / 10
+  const MIN_RADIUS = 50
+  const MAX_RADIUS = 200
 
   useEffect(() => {
     // create canvas
@@ -152,7 +152,7 @@ const BackgroundLight = ({ windowWidth, windowHeight }) => {
   }
 
   return (
-    <div ref={canvasRef} className='fixed scale-150 -z-10 blur-4xl inline dark:hidden'/>
+    <div ref={canvasRef} className='fixed scale-150 -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 -z-10 blur-4xl inline dark:hidden'/>
   )
 }
 

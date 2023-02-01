@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from 'react'
 
 const BackgroundDark = ({ windowWidth, windowHeight }) => {
 
-  const CANVAS_WIDTH = windowWidth
-  const CANVAS_HEIGHT = windowHeight
+  const CANVAS_WIDTH = windowWidth * 1.5
+  const CANVAS_HEIGHT = windowHeight * 1.5
   let canvasRef = useRef(null)
 
   let bubbles = []
@@ -18,8 +18,8 @@ const BackgroundDark = ({ windowWidth, windowHeight }) => {
   const MAX_SPEED = 2
   const MAX_SIDE_SPEED = 1
 
-  const MIN_RADIUS = CANVAS_WIDTH / 50
-  const MAX_RADIUS = CANVAS_WIDTH / 10
+  const MIN_RADIUS = 50
+  const MAX_RADIUS = 200
 
   useEffect(() => {
     // create canvas
@@ -152,7 +152,7 @@ const BackgroundDark = ({ windowWidth, windowHeight }) => {
   }
 
   return (
-    <div ref={canvasRef} className='fixed scale-150 -z-10 blur-4xl hidden dark:inline'/>
+    <div ref={canvasRef} className='fixed scale-150 -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 -z-10 blur-4xl hidden dark:inline'/>
   )
 }
 
