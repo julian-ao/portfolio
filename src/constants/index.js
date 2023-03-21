@@ -306,9 +306,9 @@ export const navSocialLinks = [
 export const introText = {
   hi: "Hi, I'm",
   name: "Julian Ammouche Ottosen",
-  title: "Computer Science Student",
+  title: "Software Developer",
   paragraph:
-    "This portfolio showcases software projects I have worked on and my skills related to computer science and web development. If you would like to know more, fell free to contact me.",
+    "This portfolio showcases software projects I have worked on and my skills related to software and web development. If you would like to know more, fell free to contact me.",
 };
 
 export const introLinks = [
@@ -450,6 +450,6 @@ export const projects = [
 export const aboutText = {
   title: "who am I?",
   paragraph:
-    "I am currently a student of informatics at the Norwegian University of Science and Technology (NTNU) in Trondheim, in the second year of my three-year program. I split my time between Trondheim and Oslo, and am deeply passionate about computer science and web development. My strongest skills lie in web development and JavaScript, but I am also fascinated by other areas of computer science. I started programming at a young age, and have continued to develop my skills and knowledge over the years. Right now I'm open to new job opportunities and internships.",
+    "I am currently a student of informatics at the Norwegian University of Science and Technology (NTNU) in Trondheim, in the second year of my three-year bachelor program. I split my time between Trondheim and Oslo, and am deeply passionate about computer science and web development. My strongest skills lie within frontend and responsive web development, but I am also fascinated by other areas of computer science. I started programming at a young age, and have continued to develop my skills and knowledge over the years. Right now I'm open to new job opportunities and internships.",
   paragraph2: "Some of the technologies I have worked with:",
 };
