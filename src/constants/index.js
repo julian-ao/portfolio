@@ -450,6 +450,6 @@ export const projects = [
 export const aboutText = {
   title: "who am I?",
   paragraph:
-    "I am currently a student of informatics at the Norwegian University of Science and Technology (NTNU) in Trondheim, in the second year of my three-year bachelor program. I split my time between Trondheim and Oslo, and am deeply passionate about computer science and web development. My strongest skills lie within frontend and responsive web development, but I am also fascinated by other areas of computer science. I started programming at a young age, and have continued to develop my skills and knowledge over the years. Right now I'm open to new job opportunities and internships.",
+    "I am currently a student of informatics at the Norwegian University of Science and Technology (NTNU) in Trondheim, in the second year of my three-year bachelor program. I split my time between Trondheim and Oslo, and am deeply passionate about computer science and web development. My strongest skills lie within frontend and responsive web development, but I am also fascinated by other areas of software development. I started programming at a young age, and have continued to develop my skills and knowledge over the years. Right now I'm open to new job opportunities and internships.",
   paragraph2: "Some of the technologies I have worked with:",
 };
