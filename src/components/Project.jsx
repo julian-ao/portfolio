@@ -29,7 +29,7 @@ const Project = (props) => {
   };
 
   return (
-    <div className='group bg-darkGrey h-52 xs:h-72 rounded-2xl bg-cover drop-shadow-xl duration-200 cursor-pointer relative overflow-hidden bg-top'
+    <div className='group bg-darkGrey h-52 xs:h-[22rem] rounded-2xl bg-cover drop-shadow-xl duration-200 cursor-pointer relative overflow-hidden bg-top'
       style={{ backgroundImage: `url(${props.imageUrl})` }} >
 
       {/* GRADIENT */}
