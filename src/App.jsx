@@ -10,6 +10,10 @@ import Footer from './components/Footer'
 
 import useWindowDimensions from './hooks/useWindowDimensions';
 
+import { inject } from '@vercel/analytics';
+
+inject();
+
 const App = () => {
   const windowWidth = useWindowDimensions().width
   const windowHeight = useWindowDimensions().height
