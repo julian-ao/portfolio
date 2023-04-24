@@ -12,9 +12,10 @@ import useWindowDimensions from './hooks/useWindowDimensions';
 
 import { inject } from '@vercel/analytics';
 
-inject();
-
 const App = () => {
+
+  inject();
+
   const windowWidth = useWindowDimensions().width
   const windowHeight = useWindowDimensions().height
 
