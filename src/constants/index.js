@@ -164,10 +164,10 @@ export const frontendSkills = [
     name: "React",
     icon: svgIcons.react,
   },
-  /*{
+  {
     name: "React Native",
     icon: svgIcons.react,
-  },*/
+  },
   {
     name: "JavaScript",
     icon: svgIcons.javascript,
@@ -219,10 +219,10 @@ export const backendSkills = [
     name: "Python",
     icon: svgIcons.python,
   },
-  /*{
+  {
     name: null,
     icon: svgIcons.django,
-  },*/
+  },
   {
     name: "SQL",
     icon: null,
@@ -231,10 +231,10 @@ export const backendSkills = [
     name: "PHP",
     icon: null,
   },
-  /*{
+  {
     name: "Springboot",
     icon: svgIcons.spring,
-  },*/
+  },
 ];
 
 export const devToolsSkills = [
@@ -274,10 +274,10 @@ export const devToolsSkills = [
     name: "JUnit",
     icon: svgIcons.java,
   },
-  /*{
+  {
     name: "Vite",
     icon: svgIcons.vite,
-  },*/
+  },
   {
     name: "Vercel",
     icon: svgIcons.vercel,
