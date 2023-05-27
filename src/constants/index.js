@@ -305,7 +305,7 @@ export const navSocialLinks = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/julian-ammouche-ottosen/",
+    url: "https://www.linkedin.com/in/julian-ammouche-ottosen",
     icon: svgIcons.linkedin,
   },
   {
@@ -343,8 +343,8 @@ export const projects = [
     title: "Portfolio",
     description:
       "A personal portfolio where i showcase my projects and skills.",
-    url: "https://www.julianao.dev/",
-    github: "https://github.com/jotto2/portfolio/",
+    url: "https://www.julianao.dev",
+    github: "https://github.com/jotto2/portfolio",
     imageUrl: "portfolio.jpg",
     tags: [
       {
@@ -369,8 +369,8 @@ export const projects = [
     title: "Password Manager",
     description:
       "A password manager with registration and login. The passwords are secured through encryption. This was a group project.",
-    url: "https://github.com/jotto2/password-manager/",
-    github: "https://github.com/jotto2/password-manager/",
+    url: "https://github.com/jotto2/password-manager",
+    github: "https://github.com/jotto2/password-manager",
     imageUrl: "passwordManager.jpg",
     tags: [
       {
@@ -443,8 +443,8 @@ export const projects = [
     title: "Game project",
     description:
       "A survival game built with p5.js. The game is playable in the browser.",
-    url: "https://jotto2.github.io/IT2/SPELPROSJEKT/index.html/",
-    github: "https://github.com/jotto2/IT2-game-project/",
+    url: "https://jotto2.github.io/IT2/SPELPROSJEKT/index.html",
+    github: "https://github.com/jotto2/IT2-game-project",
     imageUrl: "spill.jpg",
     tags: [
       {
