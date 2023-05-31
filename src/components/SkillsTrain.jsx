@@ -2,22 +2,27 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Skill from './Skill';
 
 const SkillsTrain = (props) => {
-  const both = [props.skills, props.skills, props.skills];
+  const skillsArray = []
+
+  for (let i = 0; i < props.trainLength; i++) {
+    skillsArray.push(props.skills);
+  }
+
   const speed = parseFloat(props.speed);
-  const [components] = useState(() => both.map((e, i) => ({ id: i, element: e })));
+  const [components] = useState(() => skillsArray.map((e, i) => ({ id: i, element: e })));
   const divRef = useRef(null);
   const [divWidth, setDivWidth] = useState(-1);
-  const [componentOffset, setComponentOffset] = useState(props.direction === 'left' ? 0 : -divWidth / 3);
+  const [componentOffset, setComponentOffset] = useState(props.direction === 'left' ? 0 : -divWidth / props.trainLength);
   const intervalRef = useRef(null);
 
   const handleInterval = useCallback(() => {
     setComponentOffset((offset) =>
       props.direction === 'left'
-        ? offset < -divWidth / 3
+        ? offset < -divWidth / props.trainLength
           ? 0
           : offset - speed
         : offset > 0
-        ? -divWidth / 3
+        ? -divWidth / props.trainLength
         : offset + speed
     );
   }, [props.direction, divWidth, speed]);

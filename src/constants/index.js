@@ -219,10 +219,10 @@ export const backendSkills = [
     name: "Python",
     icon: svgIcons.python,
   },
-  {
+  /*{
     name: null,
     icon: svgIcons.django,
-  },
+  },*/
   {
     name: "SQL",
     icon: null,
@@ -231,10 +231,10 @@ export const backendSkills = [
     name: "PHP",
     icon: null,
   },
-  {
+  /*{
     name: "Springboot",
     icon: svgIcons.spring,
-  },
+  },*/
 ];
 
 export const devToolsSkills = [
@@ -242,10 +242,10 @@ export const devToolsSkills = [
     name: "Git",
     icon: svgIcons.git,
   },
-  {
+  /*{
     name: "Apache Maven",
     icon: svgIcons.maven,
-  },
+  },*/
   {
     name: "GitHub",
     icon: svgIcons.github,
@@ -281,6 +281,10 @@ export const devToolsSkills = [
   {
     name: "Vercel",
     icon: svgIcons.vercel,
+  },
+  {
+    name: "Postman",
+    icon: null,
   },
 ];
 
