@@ -286,6 +286,10 @@ export const devToolsSkills = [
     name: "Postman",
     icon: null,
   },
+  /*{
+    name: "Android Studio",
+    icon: null,
+  },*/
 ];
 
 export const navPageLinks = [
