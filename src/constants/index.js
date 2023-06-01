@@ -196,6 +196,10 @@ export const frontendSkills = [
     name: "Sass",
     icon: svgIcons.sass,
   },
+  {
+    name: "TypeScript",
+    icon: null,
+  },
   /*{
     name: 'Unity',
     icon: svgIcons.unity,
@@ -218,6 +222,14 @@ export const backendSkills = [
   {
     name: "Python",
     icon: svgIcons.python,
+  },
+  {
+    name: "JavaScript",
+    icon: svgIcons.javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: null,
   },
   /*{
     name: null,
@@ -254,10 +266,10 @@ export const devToolsSkills = [
     name: "GitLab",
     icon: svgIcons.gitlab,
   },
-  {
+  /*{
     name: "VS Code",
     icon: null,
-  },
+  },*/
   {
     name: "Spotbugs",
     icon: svgIcons.spotbugs,
@@ -274,16 +286,20 @@ export const devToolsSkills = [
     name: "JUnit",
     icon: svgIcons.java,
   },
-  {
+  /*{
     name: "Vite",
     icon: svgIcons.vite,
-  },
+  },*/
   {
     name: "Vercel",
     icon: svgIcons.vercel,
   },
   {
     name: "Postman",
+    icon: null,
+  },
+  {
+    name: "Agile Development",
     icon: null,
   },
   /*{
