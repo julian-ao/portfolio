@@ -332,12 +332,12 @@ export const navSocialLinks = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/julian-ammouche-ottosen",
+    url: "https://www.linkedin.com/in/julian-ao/",
     icon: svgIcons.linkedin,
   },
   {
     name: "GitHub",
-    url: "https://github.com/julian-ao",
+    url: "https://github.com/julian-ao/",
     icon: svgIcons.github,
   },
 ];
