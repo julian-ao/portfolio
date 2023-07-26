@@ -142,15 +142,18 @@ export const svgIcons = {
     svgViewBox: "0 0 512 512",
   },
   google: {
-    svgPath: "M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z",
+    svgPath:
+      "M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z",
     svgViewBox: "0 0 488 512",
   },
   next: {
-    svgPath: "M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z",
+    svgPath:
+      "M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z",
     svgViewBox: "0 0 488 512",
   },
   typescript: {
-    svgPath: "M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z",
+    svgPath:
+      "M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z",
     svgViewBox: "0 0 488 512",
   },
 };
@@ -211,7 +214,7 @@ export const frontendSkills = [
   {
     name: "Next.js",
     icon: null,
-  }
+  },
 ];
 
 export const backendSkills = [
@@ -324,7 +327,7 @@ export const navPageLinks = [
 export const navSocialLinks = [
   {
     name: "Email",
-    url: "mailto:jotto0214@gmail.com",
+    url: "mailto:julian.ammouche@gmail.com",
     icon: svgIcons.envelope,
   },
   {
@@ -334,7 +337,7 @@ export const navSocialLinks = [
   },
   {
     name: "GitHub",
-    url: "https://github.com/jotto2",
+    url: "https://github.com/julian-ao",
     icon: svgIcons.github,
   },
 ];
@@ -368,7 +371,7 @@ export const projects = [
     description:
       "A personal portfolio where i showcase my projects and skills.",
     url: "https://www.julianao.dev",
-    github: "https://github.com/jotto2/portfolio",
+    github: "https://github.com/julian-ao/portfolio",
     imageUrl: "portfolio.jpg",
     tags: [
       {
@@ -393,8 +396,8 @@ export const projects = [
     title: "Password Manager",
     description:
       "A password manager with registration and login. The passwords are secured through encryption. This was a group project.",
-    url: "https://github.com/jotto2/password-manager",
-    github: "https://github.com/jotto2/password-manager",
+    url: "https://github.com/julian-ao/password-manager",
+    github: "https://github.com/julian-ao/password-manager",
     imageUrl: "passwordManager.jpg",
     tags: [
       {
@@ -423,8 +426,8 @@ export const projects = [
     title: "Social training application",
     description:
       "Social training app called Strev, where users can create and share training sessions and track their progress.",
-    url: "https://github.com/Jotto2/strev",
-    github: "https://github.com/Jotto2/strev",
+    url: "https://github.com/julian-ao/strev",
+    github: "https://github.com/julian-ao/strev",
     imageUrl: "strev.jpg",
     tags: [
       {
@@ -445,8 +448,8 @@ export const projects = [
     title: "Weather app",
     description:
       "Simple weather website with search function. Search function. Using API to retrieve weather data",
-    url: "https://jotto2.github.io/weather-app/",
-    github: "https://github.com/jotto2/weather-app/",
+    url: "https://julian-ao.github.io/weather-app/",
+    github: "https://github.com/julian-ao/weather-app/",
     imageUrl: "weatherApp.jpg",
     tags: [
       {
@@ -467,8 +470,8 @@ export const projects = [
     title: "Game project",
     description:
       "A survival game built with p5.js. The game is playable in the browser.",
-    url: "https://jotto2.github.io/IT2/SPELPROSJEKT/index.html",
-    github: "https://github.com/jotto2/IT2-game-project",
+    url: "https://julian-ao.github.io/IT2/SPELPROSJEKT/index.html",
+    github: "https://github.com/julian-ao/IT2-game-project",
     imageUrl: "spill.jpg",
     tags: [
       {
